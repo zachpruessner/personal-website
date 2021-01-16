@@ -1,0 +1,83 @@
+/* vv Main color palette vv */
+:root {--steel-blue: #3B7EA9ff;
+  --olive-drab-7: #3A3014ff;
+  --light-gray: #C8D3D7ff;
+  --metallic-sunburst: #998044ff;
+  --steel-blue-2: #3B7EA9ff;
+}
+/* ^^ Main color palette ^^ */
+
+body {
+  background-color: #C8D3D7ff;
+}
+
+header {
+  background-color: #998044ff;
+  position: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  header {
+    flex-wrap: wrap;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    position: static;
+    width: 100%;
+    padding: 0 50px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+  header > h1 {
+    position: relative;
+  }
+}
+
+header > h1 {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 20px;
+  width: 60vw;
+}
+
+nav {
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 35vw;
+}
+
+nav > ul > li {
+  padding: 14px 16px;
+  list-style: none;
+}
+
+nav > ul> li > a:hover {
+  color: red;
+}
+
+nav > ul> li > a:hover {
+  color: blue;
+}
+
+.nav-anchor {
+  text-decoration: none;
+  color: black;
+}
